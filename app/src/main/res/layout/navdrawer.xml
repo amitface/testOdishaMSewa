@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navdrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"/>
+
+            <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+            <!--<com.woodbazarr.customeView.CustomTextView-->
+                <!--android:id="@+id/tv_DrawerName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="2"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="18sp" />-->
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_header"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.test.orissa.msewa.costemview.CustomTextView
+                    android:id="@+id/drawerHome"
+                    style="@style/ButtonRippleStyle_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                <com.test.orissa.msewa.costemview.CustomTextView
+                    android:id="@+id/drawerSettings"
+                    style="@style/ButtonRippleStyle_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+
+                    app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                <com.test.orissa.msewa.costemview.CustomTextView
+                    android:id="@+id/drawerAbout"
+                    style="@style/ButtonRippleStyle_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="15dp"
+
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                <!--<com.woodbazarr.customeView.CustomTextView-->
+                    <!--android:id="@+id/drawer_btn_myoder"-->
+                    <!--style="@style/ButtonRippleStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingLeft="40dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="@string/myorder"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp"-->
+
+                    <!--app:edittextfont="OPENSANS_REGULAR.TTF" />-->
+
+                <!--<com.woodbazarr.customeView.CustomTextView-->
+                    <!--android:id="@+id/drawer_btn_touch"-->
+                    <!--style="@style/ButtonRippleStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingLeft="40dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="@string/touchfeel"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:edittextfont="OPENSANS_REGULAR.TTF" />-->
+                <!--<com.woodbazarr.customeView.CustomTextView-->
+                    <!--android:id="@+id/drawer_btn_touchcartorder"-->
+                    <!--style="@style/ButtonRippleStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingLeft="40dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="TOUCH FEEL ORDER"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp"-->
+
+                    <!--app:edittextfont="OPENSANS_REGULAR.TTF" />-->
+                <!--<com.woodbazarr.customeView.CustomTextView-->
+                    <!--android:id="@+id/drawer_btn_touchcart"-->
+                    <!--style="@style/ButtonRippleStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingLeft="40dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="@string/touchfeelcart"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:edittextfont="OPENSANS_REGULAR.TTF" />-->
+
+                <!--<com.woodbazarr.customeView.CustomTextView-->
+                    <!--android:id="@+id/drawer_btn_myaccount"-->
+                    <!--style="@style/ButtonRippleStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingLeft="40dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="@string/myaccount"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp"-->
+
+                    <!--app:edittextfont="OPENSANS_REGULAR.TTF" />-->
+
+                <!--<com.woodbazarr.customeView.CustomTextView-->
+                    <!--android:id="@+id/drawer_btn_logout"-->
+                    <!--style="@style/ButtonRippleStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawablePadding="15dp"-->
+                    <!--android:paddingBottom="15dp"-->
+                    <!--android:paddingLeft="40dp"-->
+                    <!--android:paddingTop="15dp"-->
+                    <!--android:text="@string/logout"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp"-->
+
+                    <!--app:edittextfont="OPENSANS_REGULAR.TTF" />-->
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

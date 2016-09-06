@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7602</color>
+    <color name="colorPrimaryDark">#C35C00</color>
+    <color name="colorAccent">#FF8400</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_border_color">#c9b5b5</color>
+    <array name="progress_colors_new">
+        <item>#FF7602</item>
+        <item>#C35C00</item>
+        <item>#FF8400</item>
+
+
+    </array>
+    <color name="gray_color">#AAAAAA</color>
+    <color name="buy_now">#F57D1C</color>
+    <color name="gray_dark">#7F7F7F</color>
+</resources>

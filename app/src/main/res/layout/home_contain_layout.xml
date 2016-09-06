@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/home_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/imgLicense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@mipmap/mylicence" />
+
+            <ImageView
+                style="@style/ButtonRippleStyle_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@mipmap/pay" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@mipmap/myfamily" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@mipmap/emergancy" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <com.mseva.customeView.AutoScrollViewPager
+                        android:id="@+id/slider_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150sp" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/vehicle"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/vahical"
+                            android:padding="10dp"
+                            android:text="MY VEHICLE"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:text="Insurance Renewal Due for year 2016-07-18"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+
+                        android:layout_weight="1"
+                        android:background="@color/banking"
+                        android:orientation="vertical">
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/banking"
+                            android:padding="10dp"
+                            android:text="BANKING"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:text="EMI of August month 2016 paid successfully"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/reminder"
+                        android:orientation="vertical">
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/reminder"
+                            android:padding="10dp"
+                            android:text="REMINDER"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:text="today is last day of insurance renewal"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:background="@color/helth"
+                            android:orientation="vertical">
+
+                            <com.mseva.customeView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/helth"
+                                android:padding="10dp"
+                                android:text="HEALTHCARE"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                            <com.mseva.customeView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="10dp"
+                                android:maxLines="2"
+                                android:text="Appointment scheduled with Dr. Ram Sharma for today"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+
+                                app:edittextfont="OPENSANS_REGULAR.TTF" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/update"
+                            android:orientation="vertical">
+
+                            <com.mseva.customeView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@mipmap/update"
+                                android:padding="10dp"
+                                android:text="UPDATE"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                            <com.mseva.customeView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="10dp"
+                                android:maxLines="2"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+
+                                app:edittextfont="OPENSANS_REGULAR.TTF" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:background="@color/banking"
+
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+
+                            android:padding="10dp"
+                            android:text="3 QUICK QUESTION"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:text="1. Are you happy with your Job ?"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <com.rey.material.widget.RadioButton
+
+                                android:id="@+id/checkboxYes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Yes"
+                                android:textColor="@color/white" />
+
+                            <com.rey.material.widget.RadioButton
+
+                                android:id="@+id/checkboxNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="No"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.mseva.customeView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/register_btn"
+                                android:padding="10dp"
+                                android:text="Next"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <com.mseva.customeView.AutoScrollViewPager
+                        android:id="@+id/slider_que"
+                        android:layout_width="wrap_content"
+                        android:layout_height="350dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include layout="@layout/page1"
+
+                        ></include>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <include layout="@layout/page2"
+                        ></include>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <include layout="@layout/page3"
+                        ></include>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.mseva.customeView.AutoScrollViewPager
+                        android:id="@+id/slider_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200sp" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/vehicle"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/vahical"
+                            android:padding="10dp"
+                            android:text="MY VEHICLE"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:text="Insurance Renewal Due for year 2016-07-18"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+
+                        android:layout_weight="1"
+                        android:background="@color/banking"
+                        android:orientation="vertical">
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:drawableRight="@mipmap/banking"
+                            android:padding="10dp"
+                            android:text="BANKING"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+                        <com.mseva.customeView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:text="EMI of August month 2016 paid successfully"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+
+                            app:edittextfont="OPENSANS_REGULAR.TTF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:elevation="40dp"
+        android:src="@mipmap/ic_launcher"
+android:visibility="gone"
+        app:fabSize="normal" />
+    <ImageView
+        android:id="@+id/float_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="16dp"
+        />
+
+
+</RelativeLayout>

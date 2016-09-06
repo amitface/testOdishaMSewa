@@ -1,0 +1,28 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_actionbar"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.test.orissa.msewa.costemview.CustomTextView
+            android:id="@+id/toolbar_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:text="M-SEWA"
+            android:textSize="16sp"
+            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

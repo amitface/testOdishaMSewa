@@ -1,0 +1,47 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/tools"
+                layout="@layout/toolbar_main" />
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/frame_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/lay_home"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80sp"-->
+            <!--android:orientation="vertical">-->
+
+            <include
+            android:id="@+id/lay_banner"
+            layout="@layout/home_contain_layout"></include>
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <!-- Nav drawer -->
+    <include layout="@layout/navdrawer" />
+</android.support.v4.widget.DrawerLayout>

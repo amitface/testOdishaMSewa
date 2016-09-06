@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default"></include>
+
+    <com.test.orissa.msewa.costemview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:padding="10dp"
+        android:text="Please enter detail for registration."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <com.test.orissa.msewa.costemview.CustomEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded_btn"
+            android:textColorHint="@color/gray_dark"
+            android:hint="Name"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName|textCapSentences"
+            android:drawableLeft="@mipmap/user"/>
+        <com.test.orissa.msewa.costemview.CustomEditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_btn"
+            android:textColorHint="@color/gray_dark"
+            android:maxLength="10"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@mipmap/mobile"/>
+
+        <com.test.orissa.msewa.costemview.CustomEditText
+            android:id="@+id/etCity"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_btn"
+            android:textColorHint="@color/gray_dark"
+            android:hint="State"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <com.test.orissa.msewa.costemview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="12dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            style="@style/ButtonRippleStyle_popup"
+            android:gravity="center"
+            android:background="@drawable/register_btn"
+            app:edittextfont="OPENSANS_REGULAR.TTF" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
